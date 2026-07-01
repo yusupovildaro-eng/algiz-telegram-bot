@@ -9,10 +9,17 @@ Usage:
 
 import json
 import os
+import socket
 import sys
 import base64
 import requests
+import urllib3.util.connection as _urllib3_cn
 from db import init_db, is_posted, mark_posted
+
+# GitHub-hosted runners sometimes advertise IPv6 connectivity that isn't
+# actually routable, causing "Network is unreachable" against dual-stack
+# hosts (e.g. elina.ru). Force IPv4 resolution for all requests in this process.
+_urllib3_cn.allowed_gai_family = lambda: socket.AF_INET
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 SOURCES = ["armas", "elina", "wlb"]

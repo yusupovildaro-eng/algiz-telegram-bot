@@ -131,9 +131,15 @@ def fetch_product_detail(product: dict) -> dict:
     product["gallery_images"] = gallery[:6]
 
     # --- Description text (all paragraph text, skipping navigation) ---
-    # Remove nav/header/footer noise
+    # Remove nav/header/footer noise and cookie-consent banners (these often
+    # contain <p> tags that would otherwise leak into the scraped description).
     for tag in soup.find_all(["nav", "header", "footer", "script", "style"]):
         tag.decompose()
+    COOKIE_MARKERS = ("cookie", "consent", "gdpr", "cerez", "kvkk")
+    for tag in soup.find_all(True):
+        attrs = " ".join([tag.get("class") and " ".join(tag.get("class")) or "", tag.get("id") or ""]).lower()
+        if any(marker in attrs for marker in COOKIE_MARKERS):
+            tag.decompose()
 
     # Collect feature list items
     features = []

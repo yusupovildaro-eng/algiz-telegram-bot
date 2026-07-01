@@ -8,6 +8,7 @@ Supports two sources:
 
 import os
 import re
+import time
 import requests
 from claude_client import generate
 from telegram_client import send_photo_bytes, send_text
@@ -88,6 +89,7 @@ Rules:
 - EVERYTHING must be in Uzbek language
 - bullet points start with ✅
 - do NOT mention price
+- output ONLY the three fields above, nothing else — no notes, comments, disclaimers, or remarks about missing/incomplete data
 - max 600 characters total"""
     raw = generate(prompt, max_tokens=500)
     name, body = _parse_response(raw, product.get("name_tr", "Товар"))
@@ -116,6 +118,7 @@ Rules:
 - bullet points start with ✅
 - do NOT mention price
 - do NOT add calls to action or contact info — added automatically
+- output ONLY the three fields above, nothing else — no notes, comments, disclaimers, or remarks about missing/incomplete data
 - max 600 characters total"""
     raw = generate(prompt, max_tokens=500)
     name, body = _parse_response(raw, product.get("name_ru", "Товар"))
@@ -143,6 +146,7 @@ Rules:
 - EVERYTHING must be in Uzbek language — translate all English text
 - bullet points start with ✅
 - do NOT mention price
+- output ONLY the three fields above, nothing else — no notes, comments, disclaimers, or remarks about missing/incomplete data
 - max 600 characters total"""
     raw = generate(prompt, max_tokens=500)
     name, body = _parse_response(raw, product.get("name_en", "Товар"))
@@ -166,12 +170,13 @@ def _parse_response(raw: str, fallback_name: str) -> tuple[str, str]:
             body = parts.split("ТЕКСТ:", 1)[1].strip()
         else:
             name = parts.strip().split("\n")[0].strip()
-    # Strip XUSUSIYATLAR / ОСОБЕННОСТИ line from body
-    body_lines = [
-        l for l in body.splitlines()
-        if not l.upper().startswith("XUSUSIYATLAR:")
-        and not l.upper().startswith("ОСОБЕННОСТИ:")
-    ]
+    # Cut body at XUSUSIYATLAR / ОСОБЕННОСТИ marker — discard that line and
+    # anything after it (Claude sometimes appends meta-commentary there).
+    body_lines = []
+    for l in body.splitlines():
+        if l.upper().startswith("XUSUSIYATLAR:") or l.upper().startswith("ОСОБЕННОСТИ:"):
+            break
+        body_lines.append(l)
     body = "\n".join(body_lines).strip()
     return _clean(name), _clean(body)
 
@@ -197,22 +202,25 @@ def post_product_card(product: dict, force: bool = False) -> bool:
 
     posted = False
     for img_url in images:
-        try:
-            resp = requests.get(
-                img_url,
-                headers={"User-Agent": "Mozilla/5.0", "Referer": "https://www.elina.ru/"},
-                timeout=15,
-            )
-            resp.raise_for_status()
-            if len(resp.content) < 1000:
-                continue
+        for attempt in range(3):
+            try:
+                resp = requests.get(
+                    img_url,
+                    headers={"User-Agent": "Mozilla/5.0", "Referer": "https://www.elina.ru/"},
+                    timeout=15,
+                )
+                resp.raise_for_status()
+                if len(resp.content) < 1000:
+                    break
 
-            send_photo_bytes(resp.content, "photo", caption)
-            posted = True
+                send_photo_bytes(resp.content, "photo", caption)
+                posted = True
+                break
+            except Exception as e:
+                print(f"  [img fail attempt {attempt + 1}] {img_url}: {e}")
+                time.sleep(2)
+        if posted:
             break
-        except Exception as e:
-            print(f"  [img fail] {img_url}: {e}")
-            continue
 
     if not posted:
         send_text(caption)
