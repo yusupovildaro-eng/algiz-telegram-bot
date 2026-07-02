@@ -106,12 +106,12 @@ def cmd_card():
 
     # Try each source in cycle until we find an unposted product
     for _ in range(len(SOURCES)):
-        file_map = {
-            "algiz": "algiz_products.json",
-            "armas": "armas_products.json",
-            "elina": "elina_products.json",
-        }
-        products = _load_json(file_map[source])
+        if source == "algiz":
+            from algiz_products import fetch_all_algiz_products
+            products = fetch_all_algiz_products()
+        else:
+            file_map = {"armas": "armas_products.json", "elina": "elina_products.json"}
+            products = _load_json(file_map[source])
 
         for p in products:
             if p["id"] not in posted_ids and not is_posted(p["id"]):
