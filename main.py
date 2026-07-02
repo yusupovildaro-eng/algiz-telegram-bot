@@ -7,8 +7,6 @@ Usage:
   python main.py card armas        — post from armaselektronik.com only
   python main.py card elina        — post from elina.ru only
   python main.py card --force      — post even if already posted
-  python main.py editorial         — post editorial (random type)
-  python main.py editorial review  — post review specifically
   python main.py init              — initialize DB
 """
 
@@ -38,19 +36,19 @@ def _save_source(source: str):
         )
 
 
-def _last_category() -> str:
+def _last_kv(key: str) -> str:
     from db import get_conn
     with get_conn() as conn:
-        row = conn.execute("SELECT value FROM kv WHERE key='last_category'").fetchone()
+        row = conn.execute("SELECT value FROM kv WHERE key=?", (key,)).fetchone()
     return row["value"] if row else ""
 
 
-def _save_category(category: str):
+def _save_kv(key: str, value: str):
     from db import get_conn
     with get_conn() as conn:
         conn.execute(
-            "INSERT OR REPLACE INTO kv (key, value) VALUES ('last_category', ?)",
-            (category,)
+            "INSERT OR REPLACE INTO kv (key, value) VALUES (?, ?)",
+            (key, value)
         )
 
 
@@ -73,28 +71,30 @@ def cmd_card(source: str | None = None, force: bool = False):
         from scraper import fetch_all_products, fetch_product_detail
         products = fetch_all_products(limit_per_category=10)
 
-    last_category = _last_category()
+    last_category = _last_kv("last_category")
+    last_supplier = _last_kv("last_supplier")
     unposted = [p for p in products if force or not is_posted(p["id"])]
-    # Avoid posting two products from the same category back-to-back.
-    candidates = [p for p in unposted if p.get("category") != last_category] or unposted
+    # Avoid posting two products in a row from the same category or the
+    # same manufacturer.
+    candidates = (
+        [p for p in unposted if p.get("category") != last_category and p.get("supplier") != last_supplier]
+        or [p for p in unposted if p.get("category") != last_category]
+        or [p for p in unposted if p.get("supplier") != last_supplier]
+        or unposted
+    )
 
     for p in candidates:
         p = fetch_product_detail(p)
         ok = post_product_card(p, force=force)
         if ok:
             name = p.get("name_ru") or p.get("name_en") or p.get("name_tr", "?")
-            print(f"Posted: {name} (category={p.get('category', '?')})")
+            print(f"Posted: {name} (category={p.get('category', '?')}, supplier={p.get('supplier', '?')})")
             _save_source(source)
-            _save_category(p.get("category", ""))
+            _save_kv("last_category", p.get("category", ""))
+            _save_kv("last_supplier", p.get("supplier", ""))
             return
 
     print(f"No new products from {source}")
-
-
-def cmd_editorial(post_type: str | None = None):
-    from editorial_post import post_editorial
-    topic = post_editorial(post_type)
-    print(f"Posted editorial: {topic}")
 
 
 def main():
@@ -112,10 +112,6 @@ def main():
         if len(args) > 1 and args[1] in MANUAL_SOURCES:
             source = args[1]
         cmd_card(source=source, force="--force" in args)
-
-    elif cmd == "editorial":
-        post_type = args[1] if len(args) > 1 and not args[1].startswith("-") else None
-        cmd_editorial(post_type)
 
     else:
         print(__doc__)

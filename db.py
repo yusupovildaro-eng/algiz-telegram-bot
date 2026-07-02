@@ -20,13 +20,6 @@ def init_db():
             )
         """)
         conn.execute("""
-            CREATE TABLE IF NOT EXISTS posted_editorials (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                topic TEXT,
-                posted_at TEXT DEFAULT (datetime('now'))
-            )
-        """)
-        conn.execute("""
             CREATE TABLE IF NOT EXISTS kv (
                 key TEXT PRIMARY KEY,
                 value TEXT
@@ -47,11 +40,4 @@ def mark_posted(product_id: str, url: str):
         conn.execute(
             "INSERT OR IGNORE INTO posted_products (product_id, url) VALUES (?, ?)",
             (product_id, url),
-        )
-
-
-def log_editorial(topic: str):
-    with get_conn() as conn:
-        conn.execute(
-            "INSERT INTO posted_editorials (topic) VALUES (?)", (topic,)
         )

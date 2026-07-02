@@ -4,7 +4,6 @@ No scraping — works from cloud environments.
 
 Usage:
   python cloud_post.py card
-  python cloud_post.py editorial
 """
 
 import json
@@ -103,6 +102,7 @@ def cmd_card():
     state = _read_state()
     posted_ids = set(state.get("posted_ids", []))
     last_category = state.get("last_category", "")
+    last_supplier = state.get("last_supplier", "")
     source = _next_source(state.get("last_source", SOURCES[-1]))
 
     # Try each source in cycle until we find an unposted product
@@ -115,20 +115,27 @@ def cmd_card():
             products = _load_json(file_map[source])
 
         unposted = [p for p in products if p["id"] not in posted_ids and not is_posted(p["id"])]
-        # Avoid posting two products from the same category back-to-back —
-        # prefer a different category if one is available.
-        candidates = [p for p in unposted if p.get("category") != last_category] or unposted
+        # Avoid posting two products in a row from the same category or the
+        # same manufacturer — prefer a candidate that differs on both, then
+        # fall back to differing on just one, then to anything unposted.
+        candidates = (
+            [p for p in unposted if p.get("category") != last_category and p.get("supplier") != last_supplier]
+            or [p for p in unposted if p.get("category") != last_category]
+            or [p for p in unposted if p.get("supplier") != last_supplier]
+            or unposted
+        )
 
         for p in candidates:
             ok = post_product_card(p, force=False)
             if ok:
                 name = p.get("name_ru") or p.get("name_en") or p.get("name_tr", "?")
                 safe = name.encode("ascii", errors="replace").decode("ascii")
-                print(f"Posted: {safe} (source={source}, category={p.get('category', '?')})")
+                print(f"Posted: {safe} (source={source}, category={p.get('category', '?')}, supplier={p.get('supplier', '?')})")
                 posted_ids.add(p["id"])
                 state["posted_ids"] = list(posted_ids)
                 state["last_source"] = source
                 state["last_category"] = p.get("category", "")
+                state["last_supplier"] = p.get("supplier", "")
                 _write_state(state)
                 return True
 
@@ -139,18 +146,6 @@ def cmd_card():
     return False
 
 
-def cmd_editorial():
-    from editorial_post import post_editorial
-    import random
-    types = ["review", "tips", "compare", "digest"]
-    topic = post_editorial(random.choice(types))
-    print(f"Editorial posted: {topic}")
-
-
 if __name__ == "__main__":
     init_db()
-    cmd = sys.argv[1] if len(sys.argv) > 1 else "card"
-    if cmd == "card":
-        cmd_card()
-    elif cmd == "editorial":
-        cmd_editorial()
+    cmd_card()

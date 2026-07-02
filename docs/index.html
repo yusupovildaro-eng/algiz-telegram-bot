@@ -11,7 +11,6 @@
   button { width: 100%; max-width: 320px; padding: 18px; border: none; border-radius: 14px; font-size: 17px; font-weight: 600; cursor: pointer; transition: opacity 0.15s; }
   button:active { opacity: 0.7; }
   .card { background: #0a84ff; color: white; }
-  .editorial { background: #30d158; color: white; }
   .reset { background: #e5e5ea; color: #636366; font-size: 14px; padding: 12px; }
   #status { font-size: 15px; color: #636366; min-height: 24px; text-align: center; }
   #setup { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 320px; }
@@ -31,7 +30,6 @@
 
 <div id="main">
   <button class="card" onclick="trigger('card')">📦 Карточка товара</button>
-  <button class="editorial" onclick="trigger('editorial')">✍️ Редакционный пост</button>
   <p id="status"></p>
   <button class="reset" onclick="resetToken()">Сменить токен</button>
 </div>
@@ -59,7 +57,7 @@ function showMain() {
 
 async function trigger(type) {
   const TOKEN = localStorage.getItem('gh_token');
-  const workflow = type === 'card' ? 'post_card.yml' : 'post_editorial.yml';
+  const workflow = 'post_card.yml';
   const status = document.getElementById('status');
   status.textContent = '⏳ Запускаю...';
   try {
