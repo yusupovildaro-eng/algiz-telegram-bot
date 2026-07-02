@@ -9,27 +9,13 @@ ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
 SHOP_URL = os.environ.get("SHOP_URL", "https://www.armaselektronik.com/tr")
 
 # Sub-category pages that contain actual products
+# Restricted to: сирены, алкотестеры (профессиональные + личные)
 CATALOG_CATEGORIES = [
-    # Световые и сирены
-    "/tepe-lambalari",
-    "/mini-tepe-lambalari",
-    "/motosiklet-ikaz-sistemleri",
-    "/mini-ikaz-lambalari",
-    "/silindirik-ikaz-lambalari",
-    "/miknatisfli-ikaz-lambalari",
-    "/trafik-yonlendirme-lambalari",
+    # Сирены
     "/siren-anons-sistemleri",
-    "/hoparlorler",
-    "/el-feneri-ve-projektorler",
-    "/arac-ici-aydinlatma",
-    "/interkom-sistemleri",
     # Алкотестеры
     "/profesyonel-alkolmetreler",
-    "/temassiz-olcum-alkolmetreler",
-    "/arac-alkolmetreleri-interlock",
     "/kisisel-olcum-alkolmetreler",
-    # Наркотесты
-    "/uyusturucu-olcum-sistemleri",
 ]
 
 CHANNEL_VOICE = """

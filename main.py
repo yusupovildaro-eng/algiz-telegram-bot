@@ -2,10 +2,9 @@
 CLI entry point.
 
 Usage:
-  python main.py card              — post next unposted card (cycles armas→elina→wlb)
+  python main.py card              — post next unposted card (cycles armas→elina)
   python main.py card armas        — post from armaselektronik.com only
   python main.py card elina        — post from elina.ru only
-  python main.py card wlb          — post from warninglightbars.com only
   python main.py card --force      — post even if already posted
   python main.py editorial         — post editorial (random type)
   python main.py editorial review  — post review specifically
@@ -15,15 +14,15 @@ Usage:
 import sys
 from db import init_db
 
-SOURCES = ["armas", "elina", "wlb"]
+SOURCES = ["armas", "elina"]
 
 
 def _next_source() -> str:
-    """Cycle armas → elina → wlb → armas ..."""
+    """Cycle armas → elina → armas ..."""
     from db import get_conn
     with get_conn() as conn:
         row = conn.execute("SELECT value FROM kv WHERE key='last_source'").fetchone()
-    last = row["value"] if row else "wlb"
+    last = row["value"] if row else "elina"
     idx = SOURCES.index(last) if last in SOURCES else -1
     return SOURCES[(idx + 1) % len(SOURCES)]
 
@@ -49,9 +48,6 @@ def cmd_card(source: str | None = None, force: bool = False):
     if source == "elina":
         from elina_scraper import fetch_all_elina_products, fetch_product_detail
         products = fetch_all_elina_products(limit_per_category=20)
-    elif source == "wlb":
-        from warning_scraper import fetch_all_wlb_products, fetch_product_detail
-        products = fetch_all_wlb_products(max_pages=15)
     else:
         from scraper import fetch_all_products, fetch_product_detail
         products = fetch_all_products(limit_per_category=10)

@@ -23,17 +23,11 @@ HEADERS = {
     "Accept-Language": "ru-RU,ru;q=0.9",
 }
 
+# Restricted to: балки СГУ, сирены (VIP-сигналы/крякалки), световые панели
 CATEGORIES = [
     "/catalog/Balki_SGU/",
-    "/catalog/probleskovyie_mayaki/",
-    "/catalog/faryi_vspyishki/",
     "/catalog/VIP-signalyi_kryakalki/",
-    "/catalog/Gromkogovoriashie_ustanovki/",
-    "/catalog/sistema_gromkoy_svyazi/",
     "/catalog/svetovyie_paneli/",
-    "/catalog/peregovornie_ustroystva/",
-    "/catalog/dlya_dorojnoy_tehniki/",
-    "/catalog/svetilniki/",
 ]
 
 _session = requests.Session()
@@ -63,8 +57,13 @@ def fetch_category_products(category_path: str) -> list[dict]:
     products = []
     seen = set()
 
+    # The "catalog__link" class is used for the site-wide sidebar nav (same
+    # links appear on every category page), so scope to hrefs that actually
+    # belong to the requested category.
     for a in soup.find_all("a", class_="catalog__link", href=True):
         href = a["href"]
+        if not href.startswith(category_path):
+            continue
         if href in seen:
             continue
         name = a.get_text(strip=True)

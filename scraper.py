@@ -137,7 +137,10 @@ def fetch_product_detail(product: dict) -> dict:
         tag.decompose()
     COOKIE_MARKERS = ("cookie", "consent", "gdpr", "cerez", "kvkk")
     for tag in soup.find_all(True):
-        attrs = " ".join([tag.get("class") and " ".join(tag.get("class")) or "", tag.get("id") or ""]).lower()
+        tag_attrs = tag.attrs or {}
+        classes = tag_attrs.get("class") or []
+        tag_id = tag_attrs.get("id") or ""
+        attrs = (" ".join(classes) + " " + tag_id).lower()
         if any(marker in attrs for marker in COOKIE_MARKERS):
             tag.decompose()
 

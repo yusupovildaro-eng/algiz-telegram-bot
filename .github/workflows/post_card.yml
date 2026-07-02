@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       source:
-        description: 'Source (armas / elina / wlb / auto)'
+        description: 'Source (armas / elina / auto)'
         required: false
         default: 'auto'
 

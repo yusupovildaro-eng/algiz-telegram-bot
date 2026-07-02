@@ -91,7 +91,7 @@ def init_state():
     path = os.path.join(DATA_DIR, "state.json")
     if not os.path.exists(path):
         with open(path, "w", encoding="utf-8") as f:
-            json.dump({"posted_ids": [], "last_source": "wlb"}, f, indent=2)
+            json.dump({"posted_ids": [], "last_source": "elina"}, f, indent=2)
         print(f"  Created state.json")
 
 
@@ -99,7 +99,7 @@ if __name__ == "__main__":
     from db import init_db
     init_db()
 
-    sources = sys.argv[1:] or ["armas", "elina", "wlb"]
+    sources = sys.argv[1:] or ["armas", "elina"]
 
     if "armas" in sources:
         cache_armas()
