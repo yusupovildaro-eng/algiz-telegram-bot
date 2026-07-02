@@ -38,6 +38,22 @@ def _save_source(source: str):
         )
 
 
+def _last_category() -> str:
+    from db import get_conn
+    with get_conn() as conn:
+        row = conn.execute("SELECT value FROM kv WHERE key='last_category'").fetchone()
+    return row["value"] if row else ""
+
+
+def _save_category(category: str):
+    from db import get_conn
+    with get_conn() as conn:
+        conn.execute(
+            "INSERT OR REPLACE INTO kv (key, value) VALUES ('last_category', ?)",
+            (category,)
+        )
+
+
 def cmd_card(source: str | None = None, force: bool = False):
     from product_card import post_product_card
     from db import is_posted
@@ -57,15 +73,20 @@ def cmd_card(source: str | None = None, force: bool = False):
         from scraper import fetch_all_products, fetch_product_detail
         products = fetch_all_products(limit_per_category=10)
 
-    for p in products:
-        if force or not is_posted(p["id"]):
-            p = fetch_product_detail(p)
-            ok = post_product_card(p, force=force)
-            if ok:
-                name = p.get("name_ru") or p.get("name_en") or p.get("name_tr", "?")
-                print(f"Posted: {name}")
-                _save_source(source)
-                return
+    last_category = _last_category()
+    unposted = [p for p in products if force or not is_posted(p["id"])]
+    # Avoid posting two products from the same category back-to-back.
+    candidates = [p for p in unposted if p.get("category") != last_category] or unposted
+
+    for p in candidates:
+        p = fetch_product_detail(p)
+        ok = post_product_card(p, force=force)
+        if ok:
+            name = p.get("name_ru") or p.get("name_en") or p.get("name_tr", "?")
+            print(f"Posted: {name} (category={p.get('category', '?')})")
+            _save_source(source)
+            _save_category(p.get("category", ""))
+            return
 
     print(f"No new products from {source}")
 

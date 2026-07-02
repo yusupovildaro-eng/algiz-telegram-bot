@@ -3,8 +3,9 @@ Loader for algiz.uz's own product catalog (data/algiz_products.json).
 
 Unlike the armas/elina scrapers, this is not scraped live — it's a snapshot
 of the products array from algiz-new's lib/data.ts, restricted to the
-categories we post about (sgu, sirens, lightbars, breathalyzers). Images are
-served directly from the live site, so no re-download / referer tricks needed.
+categories we post about (sgu, sirens, lightbars, breathalyzers, drugtests).
+Images are served directly from the live site, so no re-download / referer
+tricks needed.
 """
 
 import json
@@ -38,6 +39,7 @@ def fetch_all_algiz_products() -> list[dict]:
             "gallery_images": [IMAGE_BASE + image] if image else [],
             "source": "algiz",
             "supplier": item.get("supplier", ""),
+            "category": item.get("category", ""),
         })
     return products
 

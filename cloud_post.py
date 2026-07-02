@@ -102,6 +102,7 @@ def cmd_card():
 
     state = _read_state()
     posted_ids = set(state.get("posted_ids", []))
+    last_category = state.get("last_category", "")
     source = _next_source(state.get("last_source", SOURCES[-1]))
 
     # Try each source in cycle until we find an unposted product
@@ -113,18 +114,23 @@ def cmd_card():
             file_map = {"armas": "armas_products.json", "elina": "elina_products.json"}
             products = _load_json(file_map[source])
 
-        for p in products:
-            if p["id"] not in posted_ids and not is_posted(p["id"]):
-                ok = post_product_card(p, force=False)
-                if ok:
-                    name = p.get("name_ru") or p.get("name_en") or p.get("name_tr", "?")
-                    safe = name.encode("ascii", errors="replace").decode("ascii")
-                    print(f"Posted: {safe} (source={source})")
-                    posted_ids.add(p["id"])
-                    state["posted_ids"] = list(posted_ids)
-                    state["last_source"] = source
-                    _write_state(state)
-                    return True
+        unposted = [p for p in products if p["id"] not in posted_ids and not is_posted(p["id"])]
+        # Avoid posting two products from the same category back-to-back —
+        # prefer a different category if one is available.
+        candidates = [p for p in unposted if p.get("category") != last_category] or unposted
+
+        for p in candidates:
+            ok = post_product_card(p, force=False)
+            if ok:
+                name = p.get("name_ru") or p.get("name_en") or p.get("name_tr", "?")
+                safe = name.encode("ascii", errors="replace").decode("ascii")
+                print(f"Posted: {safe} (source={source}, category={p.get('category', '?')})")
+                posted_ids.add(p["id"])
+                state["posted_ids"] = list(posted_ids)
+                state["last_source"] = source
+                state["last_category"] = p.get("category", "")
+                _write_state(state)
+                return True
 
         print(f"No new products from {source}, trying next source...")
         source = _next_source(source)

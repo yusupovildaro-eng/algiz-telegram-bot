@@ -209,6 +209,84 @@
     "image": "/products/armas-interlock.webp"
   },
   {
+    "id": "armas-utc",
+    "name": "Тест-система UTC",
+    "model": "UTC",
+    "category": "drugtests",
+    "supplier": "armas",
+    "description": "Портативный прибор для экспресс-теста на 9 видов наркотических веществ из одного образца слюны. Результат за 8 минут. Применяется в ГИБДД, на КПП, в больницах.",
+    "description_uz": "Bitta so'lak namunasidan 9 turdagi narkotik moddalarni tezkor tekshirish uchun portativ qurilma. 8 daqiqada natija. YPX, nazorat punktlari va kasalxonalarda qo'llaniladi.",
+    "description_en": "Portable device for express testing of 9 types of narcotics from a single saliva sample. Result in 8 minutes. Used by traffic police, checkpoints and hospitals.",
+    "features": [
+      "9 наркотиков одновременно",
+      "Образец — слюна",
+      "Результат за 8 мин",
+      "Встроенный принтер"
+    ],
+    "features_uz": [
+      "9 ta narkotik bir vaqtda",
+      "Namuna — so'lak",
+      "8 daqiqada natija",
+      "O'rnatilgan printer"
+    ],
+    "features_en": [
+      "9 Drugs Simultaneously",
+      "Sample — Saliva",
+      "Results in 8 Minutes",
+      "Built-in Printer"
+    ],
+    "specs": [
+      "Питание: встроенный аккумулятор",
+      "Память: 10 000 тестов"
+    ],
+    "certifications": [
+      "CE",
+      "ISO 13485"
+    ],
+    "inStock": true,
+    "isNew": true,
+    "isPopular": true,
+    "image": "/products/armas-utc.webp"
+  },
+  {
+    "id": "armas-utk",
+    "name": "Тест-кассеты UTK",
+    "model": "UTK",
+    "category": "drugtests",
+    "supplier": "armas",
+    "description": "Одноразовые тест-кассеты на 9 видов наркотиков. Используются совместно с прибором UTC или самостоятельно. Результат визуально.",
+    "description_uz": "9 turdagi narkotiklarga bir martalik test kassеtalari. UTC qurilmasi bilan birga yoki mustaqil ravishda ishlatiladi. Natija vizual ko'rinishda.",
+    "description_en": "Disposable test cassettes for 9 types of narcotics. Used together with the UTC device or independently. Visual result.",
+    "features": [
+      "9 веществ",
+      "Одноразовые",
+      "Без прибора",
+      "Быстрый результат"
+    ],
+    "features_uz": [
+      "9 ta modda",
+      "Bir martalik",
+      "Qurilmasiz",
+      "Tez natija"
+    ],
+    "features_en": [
+      "9 Substances",
+      "Disposable",
+      "Device-Free",
+      "Fast Results"
+    ],
+    "specs": [
+      "Срок хранения: 24 мес.",
+      "Температура: Работа при 15–30°C"
+    ],
+    "certifications": [
+      "CE",
+      "ISO 13485"
+    ],
+    "inStock": true,
+    "image": "/products/armas-utk.webp"
+  },
+  {
     "id": "elina-ermak",
     "name": "Балка СГУ «Ермак»",
     "model": "Ермак",
