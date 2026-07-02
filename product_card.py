@@ -1,9 +1,10 @@
 """
 Build and post a product card to the Telegram channel.
 
-Supports two sources:
-  - armaselektronik.com (Turkish) → Claude translates to Russian
-  - elina.ru (Russian) → Claude formats existing Russian text
+Supports sources:
+  - algiz.uz (Russian, own catalog) → Claude translates to Uzbek [primary]
+  - armaselektronik.com (Turkish) → Claude translates to Uzbek
+  - elina.ru (Russian) → Claude translates to Uzbek
 """
 
 import os
@@ -17,10 +18,11 @@ from db import is_posted, mark_posted
 SHOP_LINK = "https://algiz.uz/ru"
 MANAGER_LINK = "https://t.me/www_aloqa_uz"
 
+# Keyed by either `source` or (for the unified algiz.uz catalog) `supplier`.
 COUNTRY = {
-    "armas": "🇹🇷 Ishlab chiqaruvchi: Turkiya",
-    "elina": "🇷🇺 Ishlab chiqaruvchi: Rossiya",
-    "wlb":   "🇨🇳 Ishlab chiqaruvchi: Xitoy",
+    "armas":  "🇹🇷 Ishlab chiqaruvchi: Turkiya",
+    "elina":  "🇷🇺 Ishlab chiqaruvchi: Rossiya",
+    "granda": "🇨🇳 Ishlab chiqaruvchi: Xitoy",
 }
 
 # Telegram caption limit is 1024 chars
@@ -43,8 +45,8 @@ def _clean(text: str) -> str:
     return text.strip()
 
 
-def _build_caption(name_ru: str, body: str, source: str = "") -> str:
-    country = COUNTRY.get(source, "")
+def _build_caption(name_ru: str, body: str, source: str = "", supplier: str | None = None) -> str:
+    country = COUNTRY.get(supplier or source, "")
     footer = (
         (f"\n\n{country}" if country else "")
         + "\n\n🚚 O'zbekiston bo'ylab yetkazib beramiz. Xabar yozing — tez javob beramiz!"
@@ -187,18 +189,22 @@ def post_product_card(product: dict, force: bool = False) -> bool:
         return False
 
     source = product.get("source", "armas")
-    if source == "elina":
+    if source in ("elina", "algiz"):
         name_ru, body, features = _generate_card_elina(product)
     elif source == "wlb":
         name_ru, body, features = _generate_card_wlb(product)
     else:
         name_ru, body, features = _generate_card_armas(product)
 
-    caption = _build_caption(name_ru, body, source)
+    caption = _build_caption(name_ru, body, source, supplier=product.get("supplier"))
 
     images = product.get("gallery_images") or (
         [product["image_url"]] if product.get("image_url") else []
     )
+
+    img_headers = {"User-Agent": "Mozilla/5.0"}
+    if source == "elina":
+        img_headers["Referer"] = "https://www.elina.ru/"
 
     posted = False
     for img_url in images:
@@ -206,7 +212,7 @@ def post_product_card(product: dict, force: bool = False) -> bool:
             try:
                 resp = requests.get(
                     img_url,
-                    headers={"User-Agent": "Mozilla/5.0", "Referer": "https://www.elina.ru/"},
+                    headers=img_headers,
                     timeout=15,
                 )
                 resp.raise_for_status()

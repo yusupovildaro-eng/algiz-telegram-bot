@@ -22,7 +22,7 @@ from db import init_db, is_posted, mark_posted
 _urllib3_cn.allowed_gai_family = lambda: socket.AF_INET
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
-SOURCES = ["armas", "elina"]
+SOURCES = ["algiz"]
 
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 GITHUB_REPO = os.environ.get("GITHUB_REPO", "yusupovildaro-eng/algiz")
@@ -102,11 +102,15 @@ def cmd_card():
 
     state = _read_state()
     posted_ids = set(state.get("posted_ids", []))
-    source = _next_source(state.get("last_source", "elina"))
+    source = _next_source(state.get("last_source", SOURCES[-1]))
 
     # Try each source in cycle until we find an unposted product
     for _ in range(len(SOURCES)):
-        file_map = {"armas": "armas_products.json", "elina": "elina_products.json"}
+        file_map = {
+            "algiz": "algiz_products.json",
+            "armas": "armas_products.json",
+            "elina": "elina_products.json",
+        }
         products = _load_json(file_map[source])
 
         for p in products:

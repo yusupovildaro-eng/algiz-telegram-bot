@@ -1,0 +1,2148 @@
+[
+  {
+    "id": "armas-infinity",
+    "name": "Световая панель INFINITY",
+    "model": "INFINITY-L",
+    "category": "sgu",
+    "supplier": "armas",
+    "description": "Многоцветная LED световая панель с MultiColor RBAW диодами, встроенным 100W неодимовым динамиком и TFT-пультом управления. Победитель Red Dot Design Award.",
+    "description_uz": "MultiColor RBAW diodlar, 100W neodim dinamik va TFT boshqaruv pulti bilan ko'p rangli LED yorug'lik paneli. Red Dot Design Award g'olibi.",
+    "description_en": "Multicolor LED light bar with MultiColor RBAW diodes, built-in 100W neodymium speaker and TFT control panel. Red Dot Design Award winner.",
+    "name_en": "INFINITY-L Multicolor Lightbar with Speaker",
+    "features": [
+      "MultiColor RBAW LED",
+      "100W неодимовый спикер",
+      "TFT пульт AWS-SET",
+      "5 вариантов монтажа"
+    ],
+    "features_uz": [
+      "MultiColor RBAW LED",
+      "100W neodim dinamik",
+      "TFT AWS-SET pult",
+      "5 ta o'rnatish varianti"
+    ],
+    "features_en": [
+      "MultiColor RBAW LED",
+      "100W Neodymium Speaker",
+      "TFT AWS-SET Controller",
+      "5 Mounting Options"
+    ],
+    "specs": [
+      "Длина: 116 / 139 / 161 см",
+      "Ширина: 36 см",
+      "Питание: 12V / 24V",
+      "Температура: −40°C до +70°C",
+      "Степень защиты: IP65"
+    ],
+    "certifications": [
+      "Red Dot Award",
+      "ECE R65",
+      "R10",
+      "SAE",
+      "CE"
+    ],
+    "inStock": true,
+    "isPopular": true,
+    "image": "/products/armas-infinity.webp"
+  },
+  {
+    "id": "armas-flare",
+    "name": "Световая панель FLARE",
+    "model": "FLARE",
+    "category": "lightbars",
+    "supplier": "armas",
+    "description": "Ультратонкая панель (30×8.5 см профиль) премиум-класса. 5 вариантов монтажа, совместима с сиренами EXPERT-100/W100/ECO. Победитель Red Dot Award.",
+    "description_uz": "Premium toifadagi ultra yupqa panel (30×8.5 sm profil). 5 ta o'rnatish varianti, EXPERT-100/W100/ECO sirenalari bilan mos keladi. Red Dot Award g'olibi.",
+    "description_en": "Ultra-thin premium-class panel (30×8.5 cm profile). 5 mounting options, compatible with EXPERT-100/W100/ECO sirens. Red Dot Award winner.",
+    "name_en": "FLARE Lightbar",
+    "features": [
+      "Red Dot Design Award",
+      "Профиль 30×8.5 см",
+      "5 вариантов монтажа",
+      "Совместима с EXPERT сиренами"
+    ],
+    "features_uz": [
+      "Red Dot Design Award",
+      "30×8.5 sm profil",
+      "5 ta o'rnatish varianti",
+      "EXPERT sirenalari bilan mos"
+    ],
+    "features_en": [
+      "Red Dot Design Award",
+      "30×8.5 cm Profile",
+      "5 Mounting Options",
+      "Compatible with EXPERT Sirens"
+    ],
+    "specs": [
+      "Длина: 35–210 см",
+      "Питание: 12V / 24V",
+      "Температура: −40°C до +70°C",
+      "Степень защиты: IP65"
+    ],
+    "certifications": [
+      "Red Dot Award",
+      "ECE R65",
+      "R10",
+      "CE"
+    ],
+    "inStock": true,
+    "isPopular": true,
+    "image": "/products/armas-flare.webp"
+  },
+  {
+    "id": "armas-nam19",
+    "name": "Алкотестер NAM-19",
+    "model": "NAM-19",
+    "category": "breathalyzers",
+    "supplier": "armas",
+    "description": "Доказательный алкотестер для правоохранительных органов. Электрохимический топливный элемент, TFT-дисплей, читаемый на солнце. Результат за 15 секунд.",
+    "description_uz": "Huquq-tartibot organlari uchun isbotlovchi alkotest. Elektrokimyoviy yoqilg'i elementi, quyoshda o'qiladigan TFT-displey. 15 soniyada natija.",
+    "description_en": "Evidential breathalyzer for law enforcement agencies. Electrochemical fuel cell, sunlight-readable TFT display. Result in 15 seconds.",
+    "features": [
+      "Топливный элемент (ЭХ)",
+      "TFT солнцеустойчивый дисплей",
+      "Память 7 500–100 000 тестов",
+      "Мультиязычный интерфейс"
+    ],
+    "features_uz": [
+      "Elektrokimyoviy sensor (EX)",
+      "TFT quyoshda ko'rinadigan displey",
+      "Xotira 7 500–100 000 test",
+      "Ko'p tilli interfeys"
+    ],
+    "features_en": [
+      "Electrochemical Fuel Cell (EC)",
+      "TFT Sunlight-Readable Display",
+      "Memory 7,500–100,000 Tests",
+      "Multi-language Interface"
+    ],
+    "specs": [
+      "Диапазон: 0–6‰ BAC",
+      "Объём пробы: ≥1.2 л",
+      "Время: 15 сек",
+      "Питание: 12V / 24V"
+    ],
+    "certifications": [
+      "DOT/NHTSA",
+      "CE",
+      "EN 15964"
+    ],
+    "inStock": true,
+    "isPopular": true,
+    "image": "/products/armas-nam19.webp"
+  },
+  {
+    "id": "armas-nam-personal",
+    "name": "Алкотестер персональный",
+    "model": "NAM Personal",
+    "category": "breathalyzers",
+    "supplier": "armas",
+    "description": "Персональный алкотестер для предварительного тестирования. Компактный, точный, удобный в использовании.",
+    "description_uz": "Dastlabki tekshirish uchun shaxsiy alkotest. Kompakt, aniq va foydalanishga qulay.",
+    "description_en": "Personal breathalyzer for preliminary testing. Compact, accurate and easy to use.",
+    "features": [
+      "Компактный",
+      "Быстрый результат",
+      "Съёмный мундштук",
+      "Подсветка дисплея"
+    ],
+    "features_uz": [
+      "Kompakt",
+      "Tez natija",
+      "Olinadigan og'iz qismi",
+      "Displey yorug'ligi"
+    ],
+    "features_en": [
+      "Compact",
+      "Fast Results",
+      "Removable Mouthpiece",
+      "Display Backlight"
+    ],
+    "specs": [
+      "Точность: Точность ±0.01%",
+      "Сертификат: CE сертификат"
+    ],
+    "certifications": [
+      "CE",
+      "EN 15964"
+    ],
+    "inStock": true,
+    "image": "/products/armas-nam-personal.webp"
+  },
+  {
+    "id": "armas-interlock",
+    "name": "Алкоблокировка Interlock",
+    "model": "Interlock",
+    "category": "breathalyzers",
+    "supplier": "armas",
+    "description": "Система блокировки двигателя при обнаружении алкоголя. Устанавливается в транспортное средство, предотвращает запуск при положительном тесте.",
+    "description_uz": "Alkol aniqlanganda dvigatelni bloklash tizimi. Transport vositasiga o'rnatiladi, musbat test natijasida ishga tushirishni oldini oladi.",
+    "description_en": "Engine lock system upon alcohol detection. Installed in the vehicle, prevents startup upon a positive test result.",
+    "features": [
+      "Блокировка зажигания",
+      "Скрытая установка",
+      "GPS журналирование",
+      "Антиобход"
+    ],
+    "features_uz": [
+      "O'tuvni bloklash",
+      "Yashirin o'rnatish",
+      "GPS jurnallash",
+      "Aldash himoyasi"
+    ],
+    "features_en": [
+      "Ignition Interlock",
+      "Covert Installation",
+      "GPS Logging",
+      "Anti-Bypass Protection"
+    ],
+    "specs": [
+      "Питание: 12V / 24V",
+      "Порог срабатывания: 0.2 г/л"
+    ],
+    "certifications": [
+      "CE",
+      "EN 50436"
+    ],
+    "inStock": true,
+    "isNew": true,
+    "image": "/products/armas-interlock.webp"
+  },
+  {
+    "id": "elina-ermak",
+    "name": "Балка СГУ «Ермак»",
+    "model": "Ермак",
+    "category": "sgu",
+    "supplier": "elina",
+    "description": "Светосигнальная громкоговорящая установка с LED оптикой для оперативного транспорта МВД и МЧС. 7 световых режимов, 5 звуковых сигналов.",
+    "features": [
+      "24 светодиода",
+      "7 световых режимов",
+      "5 звуковых режимов",
+      "Высота 55 мм"
+    ],
+    "specs": [
+      "Размеры: 1102×302×55 мм",
+      "Вес: 11.8 кг",
+      "Питание: 12V",
+      "Мощность звука: 110–125 дБ",
+      "Сертификат: E22 R65"
+    ],
+    "certifications": [
+      "EAC",
+      "E22 R65",
+      "GOST ISO 9001"
+    ],
+    "inStock": true,
+    "isPopular": true,
+    "image": "/products/elina-ermak.webp"
+  },
+  {
+    "id": "elina-kolumb",
+    "name": "Балка СГУ «Колумб»",
+    "model": "Колумб",
+    "category": "sgu",
+    "supplier": "elina",
+    "description": "Компактная низкопрофильная СГУ с LED оптикой. Высота корпуса не более 79 мм. Алюминиевый корпус с полированной нержавеющей решёткой.",
+    "features": [
+      "LED оптика",
+      "Низкопрофильный 79 мм",
+      "Алюминиевый корпус",
+      "Несколько длин"
+    ],
+    "specs": [
+      "Длина: 936/1062/1200 мм",
+      "Вес: 7.8 кг",
+      "Питание: 12V / 24V",
+      "Мощность звука: 110–125 дБ"
+    ],
+    "certifications": [
+      "EAC",
+      "E22 R65"
+    ],
+    "inStock": true,
+    "isPopular": true,
+    "image": "/products/elina-kolumb.webp"
+  },
+  {
+    "id": "elina-sapfir",
+    "name": "Балка СГУ «Сапфир»",
+    "model": "Сапфир",
+    "category": "sgu",
+    "supplier": "elina",
+    "description": "СГУ с галогенными лампами H1 и вращающимся стробоскопом. Широкий рупор для усиленного звукового давления. Встроенный блок питания.",
+    "features": [
+      "Галоген H1 + стробоскоп",
+      "Широкий рупор",
+      "Встроенный БП",
+      "5 звуковых режимов"
+    ],
+    "specs": [
+      "Размеры: 1012×300×150 мм",
+      "Вес: 9.3 кг",
+      "Питание: 12V",
+      "Мощность звука: 110–125 дБ"
+    ],
+    "certifications": [
+      "EAC",
+      "ECE R65"
+    ],
+    "inStock": true,
+    "image": "/products/elina-sapfir.webp"
+  },
+  {
+    "id": "elina-topaz",
+    "name": "Балка СГУ «Топаз»",
+    "model": "Топаз",
+    "category": "sgu",
+    "supplier": "elina",
+    "description": "Классическая СГУ с галогенным освещением. Проверенное решение для МВД, МЧС, Минобороны. Встроенный блок питания, экономия места в салоне.",
+    "features": [
+      "Галоген H1",
+      "Встроенный БП",
+      "Поликарбонатные рассеиватели",
+      "УФ-стабилизатор"
+    ],
+    "specs": [
+      "Размеры: 1118×300×150 мм",
+      "Вес: 10.5 кг",
+      "Питание: 12V",
+      "Мощность звука: 110–125 дБ"
+    ],
+    "certifications": [
+      "EAC",
+      "ECE R65",
+      "TR TS 018/2011"
+    ],
+    "inStock": true,
+    "image": "/products/elina-topaz.webp"
+  },
+  {
+    "id": "elina-forward",
+    "name": "Световая панель «Форвард»",
+    "model": "Форвард",
+    "category": "lightbars",
+    "supplier": "elina",
+    "description": "Современная LED световая панель от ЭЛИНА. Тонкий профиль, высокая яркость, предназначена для патрульных и оперативных автомобилей.",
+    "features": [
+      "LED технология",
+      "Тонкий профиль",
+      "Несколько цветовых конфигураций",
+      "Вибростойкость"
+    ],
+    "specs": [
+      "Питание: 12V",
+      "Степень защиты: IP67",
+      "Сертификат: E22 R65"
+    ],
+    "certifications": [
+      "EAC",
+      "E22 R65"
+    ],
+    "inStock": true,
+    "isNew": true,
+    "image": "/products/elina-forward.webp"
+  },
+  {
+    "id": "elina-magellan",
+    "name": "Световая панель «Магеллан»",
+    "model": "Магеллан",
+    "category": "lightbars",
+    "supplier": "elina",
+    "description": "Универсальная LED световая панель для спецтехники. Варианты исполнения: стандартный, Магеллан G (дорожная техника), Магеллан V (аэродром).",
+    "features": [
+      "Универсальный монтаж",
+      "Версия для спецтехники",
+      "Высокая защита IP",
+      "LED диоды"
+    ],
+    "specs": [
+      "Питание: 12V / 24V",
+      "Степень защиты: IP66",
+      "Сертификат: ECE R65"
+    ],
+    "certifications": [
+      "EAC",
+      "ECE R65"
+    ],
+    "inStock": true,
+    "image": "/products/elina-magellan.webp"
+  },
+  {
+    "id": "elina-rubin",
+    "name": "Световая панель «Рубин»",
+    "model": "Рубин",
+    "category": "lightbars",
+    "supplier": "elina",
+    "description": "Компактная LED световая панель для автомобилей оперативных служб. Лёгкий монтаж, современный дизайн, высокая световая отдача.",
+    "features": [
+      "Компактный",
+      "LED яркость",
+      "Простой монтаж",
+      "Несколько цветов"
+    ],
+    "specs": [
+      "Питание: 12V",
+      "Степень защиты: IP66"
+    ],
+    "certifications": [
+      "EAC"
+    ],
+    "inStock": false,
+    "image": "/products/elina-rubin.webp"
+  },
+  {
+    "id": "elina-smerch",
+    "name": "Сирена «Смерч»",
+    "model": "Смерч",
+    "category": "sirens",
+    "supplier": "elina",
+    "description": "Мощная рупорная громкоговорящая установка для автомобилей МВД и МЧС. Высокое звуковое давление, погодозащитный корпус.",
+    "features": [
+      "Высокая мощность",
+      "Погодозащита",
+      "Рупорный тип",
+      "Широкий угол озвучивания"
+    ],
+    "specs": [
+      "Мощность звука: 110–125 дБ",
+      "Питание: 12V / 24V",
+      "Степень защиты: IP65"
+    ],
+    "certifications": [
+      "EAC"
+    ],
+    "inStock": true,
+    "isPopular": true,
+    "image": "/products/elina-smerch.webp"
+  },
+  {
+    "id": "elina-buran",
+    "name": "Сирена «Буран»",
+    "model": "Буран",
+    "category": "sirens",
+    "supplier": "elina",
+    "description": "Компактная громкоговорящая установка для оснащения легкового и коммерческого транспорта. Лёгкий монтаж.",
+    "features": [
+      "Компактный",
+      "Простой монтаж",
+      "Высокая отдача",
+      "Всепогодный корпус"
+    ],
+    "specs": [
+      "Мощность звука: 110 дБ",
+      "Питание: 12V"
+    ],
+    "certifications": [
+      "EAC"
+    ],
+    "inStock": true,
+    "image": "/products/elina-buran.webp"
+  },
+  {
+    "id": "elina-follow-me-d",
+    "name": "Follow me D",
+    "model": "Follow me D",
+    "category": "lightbars",
+    "supplier": "elina",
+    "description": "Специализированная световая панель для аэродромных автомобилей сопровождения. Жёлтая надпись FOLLOW ME, видимая с воздуха.",
+    "features": [
+      "Надпись FOLLOW ME",
+      "Жёлтый цвет",
+      "Высокая яркость",
+      "Водозащищённый корпус"
+    ],
+    "specs": [
+      "Питание: 12V / 24V",
+      "Степень защиты: IP65"
+    ],
+    "certifications": [
+      "EAC"
+    ],
+    "inStock": true,
+    "image": "/products/elina-follow-me-d.webp"
+  },
+  {
+    "id": "elina-follow-me-dt",
+    "name": "Follow me DT",
+    "model": "Follow me DT",
+    "category": "lightbars",
+    "supplier": "elina",
+    "description": "Версия аэродромного маяка с дополнительным табло. Обе надписи активируются независимо от блока управления.",
+    "features": [
+      "Двойное табло",
+      "FOLLOW ME / STOP",
+      "Независимое управление",
+      "IP65"
+    ],
+    "specs": [
+      "Питание: 12V / 24V",
+      "Степень защиты: IP65"
+    ],
+    "certifications": [
+      "EAC"
+    ],
+    "inStock": true,
+    "image": "/products/elina-follow-me-dt.webp"
+  },
+  {
+    "id": "granda-tbd1542",
+    "name": "Световая панель TBD1542",
+    "model": "TBD1542",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Профессиональная световая панель 127 см. Сертифицирована ECE R65, CE, SAE, R10. 18 режимов мигания, двойные цвета.",
+    "features": [
+      "88×3W LED",
+      "18 режимов мигания",
+      "Двойные цвета",
+      "IP67"
+    ],
+    "specs": [
+      "Размеры: 1270×300×136 мм",
+      "Питание: 12V–24V",
+      "Степень защиты: IP67",
+      "Температура: −40°C до +55°C"
+    ],
+    "certifications": [
+      "ECE R65",
+      "R10",
+      "CE",
+      "SAE"
+    ],
+    "inStock": true,
+    "isPopular": true,
+    "image": "/products/granda-tbd1542.webp"
+  },
+  {
+    "id": "granda-tbd1503",
+    "name": "Световая панель TBD1503",
+    "model": "TBD1503",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Компактная панель 120 см с высокой световой отдачей. 88×3W LED, 18 режимов мигания, мультицвет.",
+    "features": [
+      "88×3W LED",
+      "18 режимов",
+      "Мультицвет",
+      "IP67"
+    ],
+    "specs": [
+      "Размеры: 1208×350×118 мм",
+      "Питание: 12V–24V",
+      "Степень защиты: IP67"
+    ],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "isPopular": true,
+    "image": "/products/granda-tbd1503.webp"
+  },
+  {
+    "id": "granda-tbd1508",
+    "name": "Световая панель TBD1508 со спикером",
+    "model": "TBD1508",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель со встроенным 100W громкоговорителем. Не требует отдельной сирены. 234×1W LED, 18 режимов.",
+    "features": [
+      "Встроенный 100W спикер",
+      "234×1W LED",
+      "18 режимов",
+      "IP67"
+    ],
+    "specs": [
+      "Размеры: 1200×304×142 мм",
+      "Питание: 12V–24V",
+      "Степень защиты: IP67"
+    ],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "isNew": true,
+    "image": "/products/granda-tbd1508.webp"
+  },
+  {
+    "id": "granda-tbd1517",
+    "name": "Световая панель TBD1517",
+    "model": "TBD1517",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Мощная панель 120 см с 132×3W LED. Максимальная яркость, ECE R65, 18 режимов мигания.",
+    "features": [
+      "132×3W LED",
+      "Максимальная яркость",
+      "18 режимов",
+      "IP67"
+    ],
+    "specs": [
+      "Размеры: 1200×250×115 мм",
+      "Питание: 12V–24V",
+      "Степень защиты: IP67"
+    ],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-tbd1517.webp"
+  },
+  {
+    "id": "granda-tbd1518",
+    "name": "Световая панель TBD1518 (ультратонкая)",
+    "model": "TBD1518",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Ультратонкая LED панель высотой 24.5 мм. Современный дизайн, минимальное аэродинамическое сопротивление.",
+    "features": [
+      "Высота 24.5 мм",
+      "Ультратонкий профиль",
+      "106W LED",
+      "IP67"
+    ],
+    "specs": [
+      "Размеры: 1223×218×24.5 мм",
+      "Питание: 12V–24V",
+      "Степень защиты: IP67"
+    ],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "isNew": true,
+    "image": "/products/granda-tbd1518.webp"
+  },
+  {
+    "id": "granda-tbd1513",
+    "name": "Световая панель TBD1513",
+    "model": "TBD1513",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Двухцветная световая панель 120 см. 88×3W LED, стандартный профиль, 18 режимов мигания.",
+    "features": [
+      "88×3W LED",
+      "Двойные цвета",
+      "18 режимов",
+      "IP67"
+    ],
+    "specs": [
+      "Размеры: 1200×260×130 мм",
+      "Питание: 12V–24V",
+      "Степень защиты: IP67"
+    ],
+    "certifications": [
+      "ECE R65"
+    ],
+    "inStock": false,
+    "image": "/products/granda-tbd1513.webp"
+  },
+  {
+    "id": "granda-tbd1514",
+    "name": "Световая панель TBD1514",
+    "model": "TBD1514",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Компактная панель 105 см с низким профилем. 70×1W LED, идеальна для легковых автомобилей.",
+    "features": [
+      "70×1W LED",
+      "Компактная 105 см",
+      "18 режимов",
+      "IP67"
+    ],
+    "specs": [
+      "Размеры: 1055×120×82 мм",
+      "Питание: 12V–24V",
+      "Степень защиты: IP67"
+    ],
+    "certifications": [
+      "ECE R65"
+    ],
+    "inStock": true,
+    "image": "/products/granda-tbd1514.webp"
+  },
+  {
+    "id": "granda-tbd1560a",
+    "name": "Световая панель TBD1560A",
+    "model": "TBD1560A",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Повышенный световой эффект — 35 режимов мигания. 36×2W LED, крупный корпус для максимальной заметности.",
+    "features": [
+      "35 режимов мигания",
+      "36×2W LED",
+      "Двойные цвета",
+      "IP65"
+    ],
+    "specs": [
+      "Размеры: 1240×265×232 мм",
+      "Питание: 12V–24V",
+      "Степень защиты: IP65"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-tbd1560a.webp"
+  },
+  {
+    "id": "granda-cjb136",
+    "name": "Сирена CJB136",
+    "model": "CJB136",
+    "category": "sirens",
+    "supplier": "granda",
+    "description": "Мощная электронная сирена 100W с встроенным микрофоном и функцией громкой связи. Кнопки управления световыми приборами.",
+    "features": [
+      "100W",
+      "Встроенный микрофон",
+      "PA функция",
+      "Управление светом"
+    ],
+    "specs": [
+      "Питание: 12V / 24V",
+      "Мощность звука: 100W",
+      "11Ω / 8Ω"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "isPopular": true,
+    "image": "/products/granda-cjb136.webp"
+  },
+  {
+    "id": "granda-cjb102",
+    "name": "Сирена CJB102",
+    "model": "CJB102",
+    "category": "sirens",
+    "supplier": "granda",
+    "description": "Профессиональная сирена 100W. Настраиваемые тональные режимы, кнопки управления светом. Популярная модель.",
+    "features": [
+      "100W",
+      "Настраиваемые тоны",
+      "Управление светом",
+      "12V / 24V"
+    ],
+    "specs": [
+      "Питание: 12V / 24V",
+      "Мощность звука: 100W",
+      "11Ω / 8Ω"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "isPopular": true,
+    "image": "/products/granda-cjb102.webp"
+  },
+  {
+    "id": "granda-cjb103",
+    "name": "Сирена CJB103",
+    "model": "CJB103",
+    "category": "sirens",
+    "supplier": "granda",
+    "description": "Компактная сирена 100W с корпусом из ABS-пластика. Несколько тональных режимов, управление фарами.",
+    "features": [
+      "100W",
+      "ABS корпус",
+      "Несколько тонов",
+      "Кнопки управления"
+    ],
+    "specs": [
+      "Питание: 12V / 24V",
+      "Мощность звука: 100W"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-cjb103.webp"
+  },
+  {
+    "id": "granda-cjb120",
+    "name": "Сирена CJB120 (USB)",
+    "model": "CJB120",
+    "category": "sirens",
+    "supplier": "granda",
+    "description": "Сирена 100W с поддержкой USB-флэшки для воспроизведения собственных звуков. Уникальная функция для индивидуальных настроек.",
+    "features": [
+      "100W",
+      "USB воспроизведение",
+      "Пользовательские тоны",
+      "PA функция"
+    ],
+    "specs": [
+      "Питание: 12V / 24V",
+      "Мощность звука: 100W"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "isNew": true,
+    "image": "/products/granda-cjb120.webp"
+  },
+  {
+    "id": "granda-cjb101",
+    "name": "Сирена CJB101",
+    "model": "CJB101",
+    "category": "sirens",
+    "supplier": "granda",
+    "description": "Базовая профессиональная сирена 100W. Надёжная конструкция, стандартные тональные режимы.",
+    "features": [
+      "100W",
+      "Стандартные тоны",
+      "12V / 24V",
+      "Кнопки управления"
+    ],
+    "specs": [
+      "Питание: 12V / 24V",
+      "Мощность звука: 100W",
+      "11Ω / 8Ω"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-cjb101.webp"
+  },
+  {
+    "id": "granda-cjb119",
+    "name": "Сирена CJB119",
+    "model": "CJB119",
+    "category": "sirens",
+    "supplier": "granda",
+    "description": "Расширенная сирена с дополнительными тональными режимами и управлением периферией.",
+    "features": [
+      "100W",
+      "Расширенные тоны",
+      "Управление периферией",
+      "PA функция"
+    ],
+    "specs": [
+      "Питание: 12V / 24V",
+      "Мощность звука: 100W"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-cjb119.webp"
+  },
+  {
+    "id": "armas-infinityls-hoparlorlu-tepe-lambasi",
+    "name": "Световая панель INFINITY-LS",
+    "model": "INFINITY-LS",
+    "category": "sgu",
+    "supplier": "armas",
+    "description": "Световая панель ARMAS INFINITY-LS. LED световая панель с множественными режимами вспышки.",
+    "name_en": "INFINITY-LS Lightbar with Speaker",
+    "features": [],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/armas-infinityls-hoparlorlu-tepe-lambasi.webp"
+  },
+  {
+    "id": "armas-sparkl-hoparlorlu-tepe-lambasi",
+    "name": "Световая панель SPARK-L",
+    "model": "SPARK-L",
+    "category": "sgu",
+    "supplier": "armas",
+    "description": "Световая панель ARMAS SPARK-L. LED световая панель с множественными режимами вспышки.",
+    "name_en": "SPARK-L Lightbar with Speaker",
+    "features": [],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/armas-sparkl-hoparlorlu-tepe-lambasi.webp"
+  },
+  {
+    "id": "armas-infinitym-multicolor-tepe-lambasi",
+    "name": "Световая панель INFINITY-M",
+    "model": "INFINITY-M",
+    "category": "lightbars",
+    "supplier": "armas",
+    "description": "Световая панель ARMAS INFINITY-M. LED световая панель с множественными режимами вспышки.",
+    "name_en": "INFINITY-M Multicolor Lightbar",
+    "features": [],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/armas-infinitym-multicolor-tepe-lambasi.webp"
+  },
+  {
+    "id": "armas-infinitys-tepe-lambasi",
+    "name": "Световая панель INFINITY-S",
+    "model": "INFINITY-S",
+    "category": "lightbars",
+    "supplier": "armas",
+    "description": "Световая панель ARMAS INFINITY-S. LED световая панель с множественными режимами вспышки.",
+    "name_en": "INFINITY-S Lightbar",
+    "features": [],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/armas-infinitys-tepe-lambasi.webp"
+  },
+  {
+    "id": "armas-sparkml-tepe-lambasi",
+    "name": "Световая панель SPARK-ML",
+    "model": "SPARK-ML",
+    "category": "lightbars",
+    "supplier": "armas",
+    "description": "Световая панель ARMAS SPARK-ML. LED световая панель с множественными режимами вспышки.",
+    "name_en": "SPARK-ML Lightbar",
+    "features": [],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/armas-sparkml-tepe-lambasi.webp"
+  },
+  {
+    "id": "armas-sparkms-tepe-lambasi",
+    "name": "Световая панель SPARK-MS с подсвечиваемой надписью",
+    "model": "SPARK-MS",
+    "category": "lightbars",
+    "supplier": "armas",
+    "description": "Световая панель ARMAS SPARK-MS с подсвечиваемой надписью. LED-панель с функцией отображения логотипа и текстового сообщения, освещение боковых улиц и прожекторы.",
+    "name_en": "SPARK-MS Lightbar with Illuminated Sign",
+    "features": [],
+    "certifications": [
+      "ECE R65",
+      "R10",
+      "SAE",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/armas-sparkms-tepe-lambasi.png"
+  },
+  {
+    "id": "armas-memed-tepe-lambasi",
+    "name": "Световая панель MEMED",
+    "model": "MEMED",
+    "category": "lightbars",
+    "supplier": "armas",
+    "description": "Световая панель ARMAS MEMED. LED световая панель с множественными режимами вспышки.",
+    "name_en": "MEMED Lightbar",
+    "features": [],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/armas-memed-tepe-lambasi.webp"
+  },
+  {
+    "id": "armas-voltron-tepe-lambasi",
+    "name": "Световая панель VOLTRON",
+    "model": "VOLTRON",
+    "category": "lightbars",
+    "supplier": "armas",
+    "description": "Световая панель ARMAS VOLTRON. LED световая панель с множественными режимами вспышки.",
+    "name_en": "VOLTRON Lightbar with Digital Message Panel",
+    "features": [],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/armas-voltron-tepe-lambasi.webp"
+  },
+  {
+    "id": "armas-flarems-tepe-lambasi",
+    "name": "Световая панель FLARE-MS с подсвечиваемой надписью",
+    "model": "FLARE-MS",
+    "category": "lightbars",
+    "supplier": "armas",
+    "description": "Световая панель ARMAS FLARE-MS с подсвечиваемой надписью. LED-панель на алюминиевом корпусе с областью для логотипа или текста в центре, 360° предупреждение.",
+    "description_en": "ARMAS FLARE-MS LED lightbar with illuminated sign. Aluminum housing with center area for logo or text, 360° warning visibility.",
+    "description_uz": "ARMAS FLARE-MS yoritgich paneli yoritilgan yozuv bilan. Markazda logotip yoki matn uchun joy bilan alyuminiy korpus, 360° ogohlantirish.",
+    "name_en": "FLARE-MS Lightbar with Illuminated Sign",
+    "features": [],
+    "certifications": [
+      "ECE R65",
+      "R10",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/armas-flarems-tepe-lambasi.png"
+  },
+  {
+    "id": "armas-esrn-kablolukablosuz-sirenanons-cihazi",
+    "name": "Сирена e-SRN",
+    "model": "e-SRN",
+    "category": "sirens",
+    "supplier": "armas",
+    "description": "Сирена ARMAS e-SRN. Сирена-анонс с настраиваемыми тонами.",
+    "features": [],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/armas-esrn-kablolukablosuz-sirenanons-cihazi.webp"
+  },
+  {
+    "id": "armas-esrne-kablolu-sirenanons-cihazi",
+    "name": "Сирена e-SRN/E",
+    "model": "e-SRN/E",
+    "category": "sirens",
+    "supplier": "armas",
+    "description": "Сирена ARMAS e-SRN/E. Сирена-анонс с настраиваемыми тонами.",
+    "features": [],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/armas-esrne-kablolu-sirenanons-cihazi.webp"
+  },
+  {
+    "id": "armas-expertw100-kablolukablosuz-sirenanons-cihazi",
+    "name": "Сирена EXPERT-W100",
+    "model": "EXPERT-W100",
+    "category": "sirens",
+    "supplier": "armas",
+    "description": "Сирена-анонс ARMAS EXPERT-W100 с проводным и беспроводным подключением. Настраиваемые тоны, совместима с пультами ARMAS.",
+    "features": [],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/armas-expertw100-kablolukablosuz-sirenanons-cihazi.webp"
+  },
+  {
+    "id": "armas-expert100-sirenanons-cihazi",
+    "name": "Сирена EXPERT-100",
+    "model": "EXPERT-100",
+    "category": "sirens",
+    "supplier": "armas",
+    "description": "Сирена-анонс ARMAS EXPERT-100. Компактная сирена для спецтранспорта с настраиваемыми тонами и встроенным усилителем.",
+    "features": [],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/armas-expert100-sirenanons-cihazi.webp"
+  },
+  {
+    "id": "armas-experteco-sirenanons-cihazi",
+    "name": "Сирена EXPERT-ECO",
+    "model": "EXPERT-ECO",
+    "category": "sirens",
+    "supplier": "armas",
+    "description": "Сирена-анонс ARMAS EXPERT-ECO. Экономичная модель с проводным подключением, настраиваемые тоны сигнала для патрульных автомобилей.",
+    "features": [],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/armas-experteco-sirenanons-cihazi.webp"
+  },
+  {
+    "id": "armas-expertecod-kablosuz-siren-cihazi",
+    "name": "Сирена EXPERT-ECOD",
+    "model": "EXPERT-ECOD",
+    "category": "sirens",
+    "supplier": "armas",
+    "description": "Сирена-анонс ARMAS EXPERT-ECOD с беспроводным подключением. Цифровое управление, настраиваемые тоны, компактный корпус.",
+    "features": [],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/armas-expertecod-kablosuz-siren-cihazi.webp"
+  },
+  {
+    "id": "armas-nam-e30-yazicili-alkolmetre",
+    "name": "Алкотестер NAM-E30",
+    "model": "NAM-E30",
+    "category": "breathalyzers",
+    "supplier": "armas",
+    "description": "Алкотестер ARMAS NAM-E30. Профессиональный алкотестер для транспорта.",
+    "features": [],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/armas-nam-e30-yazicili-alkolmetre.webp"
+  },
+  {
+    "id": "armas-nam19-delil-sinifi-alkolmetre",
+    "name": "Алкотестер NAM-19",
+    "model": "NAM-19",
+    "category": "breathalyzers",
+    "supplier": "armas",
+    "description": "Алкотестер ARMAS NAM-19. Профессиональный алкотестер для транспорта.",
+    "features": [],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/armas-nam19-delil-sinifi-alkolmetre.webp"
+  },
+  {
+    "id": "armas-nam19s-delil-sinifi-alkolmetre",
+    "name": "Алкотестер NAM-19S",
+    "model": "NAM-19S",
+    "category": "breathalyzers",
+    "supplier": "armas",
+    "description": "Алкотестер ARMAS NAM-19S. Профессиональный алкотестер для транспорта.",
+    "features": [],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/armas-nam19s-delil-sinifi-alkolmetre.webp"
+  },
+  {
+    "id": "armas-nam07-delil-sinifi-alkolmetre",
+    "name": "Алкотестер NAM-07",
+    "model": "NAM-07",
+    "category": "breathalyzers",
+    "supplier": "armas",
+    "description": "Алкотестер ARMAS NAM-07. Профессиональный алкотестер для транспорта.",
+    "features": [],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/armas-nam07-delil-sinifi-alkolmetre.webp"
+  },
+  {
+    "id": "armas-nam-c20-temassiz-alkolmetre",
+    "name": "Алкотестер NAM-C20",
+    "model": "NAM-C20",
+    "category": "breathalyzers",
+    "supplier": "armas",
+    "description": "Алкотестер ARMAS NAM-C20. Профессиональный алкотестер для транспорта.",
+    "features": [],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/armas-nam-c20-temassiz-alkolmetre.webp"
+  },
+  {
+    "id": "armas-nam-19e-temassiz-alkolmetre",
+    "name": "Алкотестер NAM-19E",
+    "model": "NAM-19E",
+    "category": "breathalyzers",
+    "supplier": "armas",
+    "description": "Алкотестер ARMAS NAM-19E. Профессиональный алкотестер для транспорта.",
+    "features": [],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/armas-nam-19e-temassiz-alkolmetre.webp"
+  },
+  {
+    "id": "armas-nam-c20m-kisisel-olcum-alkolmetre",
+    "name": "Алкотестер NAM-C20M",
+    "model": "NAM-C20M",
+    "category": "breathalyzers",
+    "supplier": "armas",
+    "description": "Алкотестер ARMAS NAM-C20M. Профессиональный алкотестер для транспорта.",
+    "features": [],
+    "certifications": [
+      "ECE R65",
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/armas-nam-c20m-kisisel-olcum-alkolmetre.webp"
+  },
+  {
+    "id": "elina-probleskovyie-paneli",
+    "name": "Магеллан G/V",
+    "model": "Магеллан",
+    "category": "lightbars",
+    "supplier": "elina",
+    "description": "МАГЕЛЛАН 3D-12-V Описание Световая панель «Магеллан» предназначена для оснащения автомобилей оперативных служб подразделений МВД, МЧС, Минобороны России, Минздрав России, а также дорожных и комунальны",
+    "features": [
+      "Современная низкопрофильная СП (не более 78мм )",
+      "Мощный светодиодный проблеск.",
+      "Цельный корпус из алюминия."
+    ],
+    "certifications": [
+      "EAC"
+    ],
+    "inStock": true,
+    "image": "/products/elina-probleskovyie-paneli.webp"
+  },
+  {
+    "id": "granda-leb51",
+    "name": "Световая панель LEB51",
+    "model": "LEB51",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda LEB51. Powered by 9-32V, Light source：12*3W LED",
+    "features": [
+      "Powered by 9-32V",
+      "Light source：12*3W LED",
+      "Beam: Flood or Spot",
+      "Lumen: 3000LM"
+    ],
+    "specs": [
+      "Powered by 9-32V",
+      "Мощность звука: Light source：12*3W LED",
+      "Beam: Flood or Spot",
+      "Lumen: 3000LM"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-leb51.webp"
+  },
+  {
+    "id": "granda-leb52",
+    "name": "Световая панель LEB52",
+    "model": "LEB52",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda LEB52. Powered by 9-32V, Light source：24*3W LED",
+    "features": [
+      "Powered by 9-32V",
+      "Light source：24*3W LED",
+      "Beam: Flood or Spot",
+      "Lumen: 6000LM"
+    ],
+    "specs": [
+      "Powered by 9-32V",
+      "Мощность звука: Light source：24*3W LED",
+      "Beam: Flood or Spot",
+      "Lumen: 6000LM"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-leb52.webp"
+  },
+  {
+    "id": "granda-leb53",
+    "name": "Световая панель LEB53",
+    "model": "LEB53",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda LEB53. Powered by 9-32V, Light source：40*3W LED",
+    "features": [
+      "Powered by 9-32V",
+      "Light source：40*3W LED",
+      "Beam: Flood or Spot",
+      "Lumen: 6500LM"
+    ],
+    "specs": [
+      "Powered by 9-32V",
+      "Мощность звука: Light source：40*3W LED",
+      "Beam: Flood or Spot",
+      "Lumen: 6500LM"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-leb53.webp"
+  },
+  {
+    "id": "granda-leb54",
+    "name": "Световая панель LEB54",
+    "model": "LEB54",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda LEB54. Powered by 9-32V, Light source：60*3W LED",
+    "features": [
+      "Powered by 9-32V",
+      "Light source：60*3W LED",
+      "Beam: Flood or Spot",
+      "Lumen: 15000LM"
+    ],
+    "specs": [
+      "Powered by 9-32V",
+      "Мощность звука: Light source：60*3W LED",
+      "Beam: Flood or Spot",
+      "Lumen: 15000LM"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-leb54.webp"
+  },
+  {
+    "id": "granda-leb56",
+    "name": "Световая панель LEB56",
+    "model": "LEB56",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda LEB56. Powered by 9-32V, Light source：80*3W LED",
+    "features": [
+      "Powered by 9-32V",
+      "Light source：80*3W LED",
+      "Beam: Flood or Spot",
+      "Lumen: 20000LM"
+    ],
+    "specs": [
+      "Powered by 9-32V",
+      "Мощность звука: Light source：80*3W LED",
+      "Beam: Flood or Spot",
+      "Lumen: 20000LM"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-leb56.webp"
+  },
+  {
+    "id": "granda-leb57",
+    "name": "Световая панель LEB57",
+    "model": "LEB57",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda LEB57. Powered by 9-32V, Light source：6*5W LED",
+    "features": [
+      "Powered by 9-32V",
+      "Light source：6*5W LED",
+      "Beam: Flood / Spot /Combo",
+      "Lumen: 2500LM"
+    ],
+    "specs": [
+      "Powered by 9-32V",
+      "Мощность звука: Light source：6*5W LED",
+      "Beam: Flood / Spot /Combo",
+      "Lumen: 2500LM"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-leb57.webp"
+  },
+  {
+    "id": "granda-leb58",
+    "name": "Световая панель LEB58",
+    "model": "LEB58",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda LEB58. Powered by 9-32V, Light source：12*5W LED",
+    "features": [
+      "Powered by 9-32V",
+      "Light source：12*5W LED",
+      "Beam: Flood / Spot /Combo",
+      "Lumen: 5000LM"
+    ],
+    "specs": [
+      "Powered by 9-32V",
+      "Мощность звука: Light source：12*5W LED",
+      "Beam: Flood / Spot /Combo",
+      "Lumen: 5000LM"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-leb58.webp"
+  },
+  {
+    "id": "granda-tbd1156",
+    "name": "Световая панель TBD1156",
+    "model": "TBD1156",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda TBD1156. Powered by 12V or 24V, Light source：super brighter LED beacon",
+    "features": [
+      "Powered by 12V or 24V",
+      "Light source：super brighter LED beacon",
+      "Size 1214mm*296mm*196mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "specs": [
+      "Powered by 12V or 24V",
+      "Light source：super brighter LED beacon",
+      "Size 1214mm*296mm*196mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-tbd1156.webp"
+  },
+  {
+    "id": "granda-tbd1515",
+    "name": "Световая панель TBD1515",
+    "model": "TBD1515",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda TBD1515. Powered by 12V, Light source：88*1W LED",
+    "features": [
+      "Powered by 12V",
+      "Light source：88*1W LED",
+      "Size 1180*225*120mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "specs": [
+      "Powered by 12V",
+      "Мощность звука: Light source：88*1W LED",
+      "Size 1180*225*120mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-tbd1515.webp"
+  },
+  {
+    "id": "granda-tbd1519",
+    "name": "Световая панель TBD1519",
+    "model": "TBD1519",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda TBD1519. Powered by 12V, Light source：87W LED",
+    "features": [
+      "Powered by 12V",
+      "Light source：87W LED",
+      "Size 1194*204*23.5mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "specs": [
+      "Powered by 12V",
+      "Мощность звука: Light source：87W LED",
+      "Size 1194*204*23.5mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-tbd1519.webp"
+  },
+  {
+    "id": "granda-tbd1520",
+    "name": "Световая панель TBD1520",
+    "model": "TBD1520",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda TBD1520. Powered by 12V or 24V, Light source：LEDs",
+    "features": [
+      "Powered by 12V or 24V",
+      "Light source：LEDs",
+      "Size 1200*296*215mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "specs": [
+      "Powered by 12V or 24V",
+      "Light source：LEDs",
+      "Size 1200*296*215mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-tbd1520.webp"
+  },
+  {
+    "id": "granda-tbd1581",
+    "name": "Световая панель TBD1581",
+    "model": "TBD1581",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda TBD1581. Powered by 12V, Light source：88*3W LED",
+    "features": [
+      "Powered by 12V",
+      "Light source：88*3W LED",
+      "Size 1200mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "specs": [
+      "Powered by 12V",
+      "Мощность звука: Light source：88*3W LED",
+      "Size 1200mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-tbd1581.webp"
+  },
+  {
+    "id": "granda-tbd1583",
+    "name": "Световая панель TBD1583",
+    "model": "TBD1583",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda TBD1583. Powered by 12V or 24V, Light source：88*1W LED",
+    "features": [
+      "Powered by 12V or 24V",
+      "Light source：88*1W LED",
+      "Size 1160*284*86mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "specs": [
+      "Powered by 12V or 24V",
+      "Мощность звука: Light source：88*1W LED",
+      "Size 1160*284*86mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-tbd1583.webp"
+  },
+  {
+    "id": "granda-tbd1585",
+    "name": "Световая панель TBD1585",
+    "model": "TBD1585",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda TBD1585. Powered by 12V, Light source：112*3W LED",
+    "features": [
+      "Powered by 12V",
+      "Light source：112*3W LED",
+      "Size 117*148*57mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "specs": [
+      "Powered by 12V",
+      "Мощность звука: Light source：112*3W LED",
+      "Size 117*148*57mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-tbd1585.webp"
+  },
+  {
+    "id": "granda-tbd1586",
+    "name": "Световая панель TBD1586",
+    "model": "TBD1586",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda TBD1586. Powered by 12V, Light source：128*1W LED",
+    "features": [
+      "Powered by 12V",
+      "Light source：128*1W LED",
+      "Size 1197*264*44mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "specs": [
+      "Powered by 12V",
+      "Мощность звука: Light source：128*1W LED",
+      "Size 1197*264*44mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-tbd1586.webp"
+  },
+  {
+    "id": "granda-tbd1587",
+    "name": "Световая панель TBD1587",
+    "model": "TBD1587",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda TBD1587. Powered by 12V, Light source：88*3W LED",
+    "features": [
+      "Powered by 12V",
+      "Light source：88*3W LED",
+      "Size 1200*300*100mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "specs": [
+      "Powered by 12V",
+      "Мощность звука: Light source：88*3W LED",
+      "Size 1200*300*100mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-tbd1587.webp"
+  },
+  {
+    "id": "granda-tbd1589",
+    "name": "Световая панель TBD1589",
+    "model": "TBD1589",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda TBD1589. Powered by 12V, Light source：234*1W LED",
+    "features": [
+      "Powered by 12V",
+      "Light source：234*1W LED",
+      "Size 1224.5*257*43mmmm",
+      "Amber / Blue / White / Red / dual LED colors"
+    ],
+    "specs": [
+      "Powered by 12V",
+      "Мощность звука: Light source：234*1W LED",
+      "Size 1224.5*257*43mmmm",
+      "Amber / Blue / White / Red / dual LED colors"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-tbd1589.webp"
+  },
+  {
+    "id": "granda-tbd9502",
+    "name": "Световая панель TBD9502",
+    "model": "TBD9502",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda TBD9502. Powered by 12V or 24V, Light source：96*1W LED",
+    "features": [
+      "Powered by 12V or 24V",
+      "Light source：96*1W LED",
+      "Size 1165*283*96mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "specs": [
+      "Powered by 12V or 24V",
+      "Мощность звука: Light source：96*1W LED",
+      "Size 1165*283*96mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-tbd9502.webp"
+  },
+  {
+    "id": "granda-tbd9503",
+    "name": "Световая панель TBD9503",
+    "model": "TBD9503",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda TBD9503. Powered by 12V or 24V, Light source：88*1W LED",
+    "features": [
+      "Powered by 12V or 24V",
+      "Light source：88*1W LED",
+      "Size 1216*280*100mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "specs": [
+      "Powered by 12V or 24V",
+      "Мощность звука: Light source：88*1W LED",
+      "Size 1216*280*100mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-tbd9503.webp"
+  },
+  {
+    "id": "granda-tbd9504",
+    "name": "Световая панель TBD9504",
+    "model": "TBD9504",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda TBD9504. Powered by 12V, Light source：144*3W LED",
+    "features": [
+      "Powered by 12V",
+      "Light source：144*3W LED",
+      "Size 1132*210*40mmmm",
+      "Amber / Blue / White / Red / dual LED colors"
+    ],
+    "specs": [
+      "Powered by 12V",
+      "Мощность звука: Light source：144*3W LED",
+      "Size 1132*210*40mmmm",
+      "Amber / Blue / White / Red / dual LED colors"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-tbd9504.webp"
+  },
+  {
+    "id": "granda-tbd9505",
+    "name": "Световая панель TBD9505",
+    "model": "TBD9505",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda TBD9505. Powered by 12V, Light source：95*1W LED",
+    "features": [
+      "Powered by 12V",
+      "Light source：95*1W LED",
+      "Size 1200*259*36mm",
+      "Amber / Blue / White / Red / dual LED colors"
+    ],
+    "specs": [
+      "Powered by 12V",
+      "Мощность звука: Light source：95*1W LED",
+      "Size 1200*259*36mm",
+      "Amber / Blue / White / Red / dual LED colors"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-tbd9505.webp"
+  },
+  {
+    "id": "granda-tbd9509",
+    "name": "Световая панель TBD9509",
+    "model": "TBD9509",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda TBD9509. Powered by 12V, Light source：144*3W LED",
+    "features": [
+      "Powered by 12V",
+      "Light source：144*3W LED",
+      "Size 1132*210*40mmmm",
+      "Amber / Blue / White / Red / dual LED colors"
+    ],
+    "specs": [
+      "Powered by 12V",
+      "Мощность звука: Light source：144*3W LED",
+      "Size 1132*210*40mmmm",
+      "Amber / Blue / White / Red / dual LED colors"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-tbd9509.webp"
+  },
+  {
+    "id": "granda-tbd9510",
+    "name": "Световая панель TBD9510",
+    "model": "TBD9510",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda TBD9510. Powered by 12V, Light source：108*1W LED",
+    "features": [
+      "Powered by 12V",
+      "Light source：108*1W LED",
+      "Size 1236*165*120mm",
+      "Amber / Blue / White / Red LED colors"
+    ],
+    "specs": [
+      "Powered by 12V",
+      "Мощность звука: Light source：108*1W LED",
+      "Size 1236*165*120mm",
+      "Amber / Blue / White / Red LED colors"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-tbd9510.webp"
+  },
+  {
+    "id": "granda-tbd9512",
+    "name": "Световая панель TBD9512",
+    "model": "TBD9512",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda TBD9512. Powered by 12V, Light source：168*1W LED",
+    "features": [
+      "Powered by 12V",
+      "Light source：168*1W LED",
+      "Size 1211*281*48mm",
+      "Amber / Blue / White / Red / dual LED colors"
+    ],
+    "specs": [
+      "Powered by 12V",
+      "Мощность звука: Light source：168*1W LED",
+      "Size 1211*281*48mm",
+      "Amber / Blue / White / Red / dual LED colors"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-tbd9512.webp"
+  },
+  {
+    "id": "granda-tbd9515",
+    "name": "Световая панель TBD9515",
+    "model": "TBD9515",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda TBD9515. Powered by 10V, Light source：204W LED",
+    "features": [
+      "Powered by 10V",
+      "Light source：204W LED",
+      "Size 1155.9*196.1*23mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "specs": [
+      "Powered by 10V",
+      "Мощность звука: Light source：204W LED",
+      "Size 1155.9*196.1*23mm",
+      "Amber / Blue / White / Red / LED colors"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-tbd9515.webp"
+  },
+  {
+    "id": "granda-tbd9518",
+    "name": "Световая панель TBD9518",
+    "model": "TBD9518",
+    "category": "lightbars",
+    "supplier": "granda",
+    "description": "Световая панель Granda TBD9518. Powered by 12V, Light source：168*1W LED",
+    "features": [
+      "Powered by 12V",
+      "Light source：168*1W LED",
+      "Size 1204*300*97mm",
+      "Amber / Blue / White / Red / dual LED colors"
+    ],
+    "specs": [
+      "Powered by 12V",
+      "Мощность звука: Light source：168*1W LED",
+      "Size 1204*300*97mm",
+      "Amber / Blue / White / Red / dual LED colors"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-tbd9518.webp"
+  },
+  {
+    "id": "granda-cjb0203",
+    "name": "Сирена CJB0203",
+    "model": "CJB0203",
+    "category": "sirens",
+    "supplier": "granda",
+    "description": "Сирена Granda CJB0203. Voltage 12V, Power 20W    4 OHM",
+    "features": [
+      "Voltage 12V",
+      "Power 20W    4 OHM",
+      "IP65waterproof",
+      "+55℃ working temperature"
+    ],
+    "specs": [
+      "Voltage 12V",
+      "Мощность звука: Power 20W    4 OHM",
+      "Степень защиты: IP65waterproof",
+      "+55℃ working temperature"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-cjb0203.webp"
+  },
+  {
+    "id": "granda-cjb115",
+    "name": "Сирена CJB115",
+    "model": "CJB115",
+    "category": "sirens",
+    "supplier": "granda",
+    "description": "Сирена Granda CJB115. Powered by 12V or 24V, Power：100W",
+    "features": [
+      "Powered by 12V or 24V",
+      "Power：100W",
+      "11 OHM or 8OHM",
+      "Tones could be customized"
+    ],
+    "specs": [
+      "Powered by 12V or 24V",
+      "Мощность звука: Power：100W",
+      "11 OHM or 8OHM",
+      "Tones could be customized"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-cjb115.webp"
+  },
+  {
+    "id": "granda-cjb116",
+    "name": "Сирена CJB116",
+    "model": "CJB116",
+    "category": "sirens",
+    "supplier": "granda",
+    "description": "Сирена Granda CJB116. Powered by 12V or 24V, Power：100W",
+    "features": [
+      "Powered by 12V or 24V",
+      "Power：100W",
+      "11 OHM or 8OHM",
+      "Tones could be customized"
+    ],
+    "specs": [
+      "Powered by 12V or 24V",
+      "Мощность звука: Power：100W",
+      "11 OHM or 8OHM",
+      "Tones could be customized"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-cjb116.webp"
+  },
+  {
+    "id": "granda-cjb135",
+    "name": "Сирена CJB135",
+    "model": "CJB135",
+    "category": "sirens",
+    "supplier": "granda",
+    "description": "Сирена Granda CJB135. Powered by 12V or 24V, Power：100W",
+    "features": [
+      "Powered by 12V or 24V",
+      "Power：100W",
+      "11 OHM or 8OHM",
+      "Tones could be customized"
+    ],
+    "specs": [
+      "Powered by 12V or 24V",
+      "Мощность звука: Power：100W",
+      "11 OHM or 8OHM",
+      "Tones could be customized"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-cjb135.webp"
+  },
+  {
+    "id": "granda-cjb155",
+    "name": "Сирена CJB155",
+    "model": "CJB155",
+    "category": "sirens",
+    "supplier": "granda",
+    "description": "Сирена Granda CJB155. Powered by 12V or 24V, Power：100W",
+    "features": [
+      "Powered by 12V or 24V",
+      "Power：100W",
+      "11 OHM or 8OHM",
+      "Tones could be customized"
+    ],
+    "specs": [
+      "Powered by 12V or 24V",
+      "Мощность звука: Power：100W",
+      "11 OHM or 8OHM",
+      "Tones could be customized"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-cjb155.webp"
+  },
+  {
+    "id": "granda-cjb157",
+    "name": "Сирена CJB157",
+    "model": "CJB157",
+    "category": "sirens",
+    "supplier": "granda",
+    "description": "Сирена Granda CJB157. Powered by 12V or 24V, Power：100W",
+    "features": [
+      "Powered by 12V or 24V",
+      "Power：100W",
+      "11 OHM or 8OHM",
+      "Tones could be customized"
+    ],
+    "specs": [
+      "Powered by 12V or 24V",
+      "Мощность звука: Power：100W",
+      "11 OHM or 8OHM",
+      "Tones could be customized"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-cjb157.webp"
+  },
+  {
+    "id": "granda-cjb158",
+    "name": "Сирена CJB158",
+    "model": "CJB158",
+    "category": "sirens",
+    "supplier": "granda",
+    "description": "Сирена Granda CJB158. Powered by 12V or 24V, Power：100W",
+    "features": [
+      "Powered by 12V or 24V",
+      "Power：100W",
+      "11 OHM or 8OHM",
+      "Tones could be customized"
+    ],
+    "specs": [
+      "Powered by 12V or 24V",
+      "Мощность звука: Power：100W",
+      "11 OHM or 8OHM",
+      "Tones could be customized"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-cjb158.webp"
+  },
+  {
+    "id": "granda-cjb183",
+    "name": "Сирена CJB183",
+    "model": "CJB183",
+    "category": "sirens",
+    "supplier": "granda",
+    "description": "Сирена Granda CJB183. Powered by 12V or 24V, Power：100W",
+    "features": [
+      "Powered by 12V or 24V",
+      "Power：100W",
+      "11 OHM or 8OHM",
+      "Tones could be customized"
+    ],
+    "specs": [
+      "Powered by 12V or 24V",
+      "Мощность звука: Power：100W",
+      "11 OHM or 8OHM",
+      "Tones could be customized"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-cjb183.webp"
+  },
+  {
+    "id": "granda-cjb310",
+    "name": "Сирена CJB310",
+    "model": "CJB310",
+    "category": "sirens",
+    "supplier": "granda",
+    "description": "Сирена Granda CJB310. Powered by 12V or 24V, Power：300W",
+    "features": [
+      "Powered by 12V or 24V",
+      "Power：300W",
+      "4OHM or 6OHM",
+      "Tones could be customized"
+    ],
+    "specs": [
+      "Powered by 12V or 24V",
+      "Мощность звука: Power：300W",
+      "4OHM or 6OHM",
+      "Tones could be customized"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-cjb310.webp"
+  },
+  {
+    "id": "granda-cjb366",
+    "name": "Сирена CJB366",
+    "model": "CJB366",
+    "category": "sirens",
+    "supplier": "granda",
+    "description": "Сирена Granda CJB366. Powered by 12V or 24V, Power：300W",
+    "features": [
+      "Powered by 12V or 24V",
+      "Power：300W",
+      "4OHM or 6OHM",
+      "Tones could be customized"
+    ],
+    "specs": [
+      "Powered by 12V or 24V",
+      "Мощность звука: Power：300W",
+      "4OHM or 6OHM",
+      "Tones could be customized"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-cjb366.webp"
+  },
+  {
+    "id": "granda-cjb800",
+    "name": "Сирена CJB800",
+    "model": "CJB800",
+    "category": "sirens",
+    "supplier": "granda",
+    "description": "Сирена Granda CJB800. Powered by 12V or 24V, Power：80W",
+    "features": [
+      "Powered by 12V or 24V",
+      "Power：80W",
+      "11 OHM or 8OHM",
+      "Tones could be customized"
+    ],
+    "specs": [
+      "Powered by 12V or 24V",
+      "Мощность звука: Power：80W",
+      "11 OHM or 8OHM",
+      "Tones could be customized"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-cjb800.webp"
+  },
+  {
+    "id": "granda-cjbx5",
+    "name": "Сирена CJBX5",
+    "model": "CJBX5",
+    "category": "sirens",
+    "supplier": "granda",
+    "description": "Сирена Granda CJBX5. Powered by 12V or 24V, Power：200W",
+    "features": [
+      "Powered by 12V or 24V",
+      "Power：200W",
+      "Tones could be customized",
+      "150W or 100W could to be selected"
+    ],
+    "specs": [
+      "Powered by 12V or 24V",
+      "Мощность звука: Power：200W",
+      "Tones could be customized",
+      "Мощность звука: 150W or 100W could to be selected"
+    ],
+    "certifications": [
+      "CE"
+    ],
+    "inStock": true,
+    "image": "/products/granda-cjbx5.webp"
+  }
+]

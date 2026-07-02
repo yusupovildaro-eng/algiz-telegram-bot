@@ -2,7 +2,8 @@
 CLI entry point.
 
 Usage:
-  python main.py card              — post next unposted card (cycles armas→elina)
+  python main.py card              — post next unposted card (from algiz.uz catalog)
+  python main.py card algiz        — post from algiz.uz catalog only
   python main.py card armas        — post from armaselektronik.com only
   python main.py card elina        — post from elina.ru only
   python main.py card --force      — post even if already posted
@@ -14,15 +15,16 @@ Usage:
 import sys
 from db import init_db
 
-SOURCES = ["armas", "elina"]
+SOURCES = ["algiz"]
+MANUAL_SOURCES = ["algiz", "armas", "elina"]
 
 
 def _next_source() -> str:
-    """Cycle armas → elina → armas ..."""
+    """Cycle through SOURCES."""
     from db import get_conn
     with get_conn() as conn:
         row = conn.execute("SELECT value FROM kv WHERE key='last_source'").fetchone()
-    last = row["value"] if row else "elina"
+    last = row["value"] if row else SOURCES[-1]
     idx = SOURCES.index(last) if last in SOURCES else -1
     return SOURCES[(idx + 1) % len(SOURCES)]
 
@@ -45,7 +47,10 @@ def cmd_card(source: str | None = None, force: bool = False):
 
     print(f"Source: {source}")
 
-    if source == "elina":
+    if source == "algiz":
+        from algiz_products import fetch_all_algiz_products, fetch_product_detail
+        products = fetch_all_algiz_products()
+    elif source == "elina":
         from elina_scraper import fetch_all_elina_products, fetch_product_detail
         products = fetch_all_elina_products(limit_per_category=20)
     else:
@@ -83,7 +88,7 @@ def main():
 
     if cmd == "card":
         source = None
-        if len(args) > 1 and args[1] in SOURCES:
+        if len(args) > 1 and args[1] in MANUAL_SOURCES:
             source = args[1]
         cmd_card(source=source, force="--force" in args)
 
